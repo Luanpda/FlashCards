@@ -1,0 +1,122 @@
+**{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --fonte: "Poppins", sans-serif;
+    --azul: #123458;
+    --branco: #ffffff;
+    --roxo: #5D0E41;
+}
+
+body {
+   
+    height: 100vh;
+    background: linear-gradient(to top, #000000, #1e3c72);
+    font-family: var(--fonte);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    
+  }
+h1{
+    margin-bottom: 1.5em;
+}
+
+.Menu{
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 40em;
+    background-color:  #210F37;
+    border-radius: 20px;
+    
+}
+
+.formulario{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    font-size: 18px;
+}
+.formulario-parte1{
+    margin-bottom: 3.5em;
+}
+.formulario-parte2{
+    margin-bottom: 1em;
+}
+
+
+.titulo-flash-card{
+    margin-top: 0.5em;
+    width: 70%;
+    border: none;
+    color: black;
+    max-width: 500px;
+    padding: 1em ;
+    background-color: var(--roxo) ;
+    border-radius: 15px;
+    
+    
+}
+input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0 0 8px #7E30E1;
+}
+.texto-flash-card{
+    margin-top: 0.5em;
+    width: 70%;
+    border: none;
+    color: black;
+    max-width: 500px;
+    padding: 1em ;
+    background-color: var(--roxo) ;
+    border-radius: 15px;
+    resize: none;
+    
+}
+
+textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px #7E30E1;
+}
+
+.botao-criar{
+    width: 30%;
+    min-width: 10em;
+    background-color: var(--roxo);
+    border: none;
+    font: inherit;
+    color: inherit;
+    font-size: 16px;
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    border-radius: 15px;
+}
+
+
+.FlashCards{
+    display: flex;
+    gap: 1em;
+}
+.FlashCard{
+    border: none;
+    font: inherit;
+    color: inherit;
+    font-size: 16px;
+    
+    border-radius: 10px;
+    padding: 0.5em;
+    background-color: #A5158C;
+    margin-bottom: 1.5em;
+}
+.FlashCardbase{
+    display: none;
+}
+
+  

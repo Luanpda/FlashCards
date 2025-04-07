@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="Menu">
+        <h1>FlashCard</h1>
+        <form class="formulario">
+            <div  class="formulario-parte1">
+                <label for="titulo">Digite a frente do FlashCard</label>
+                <input id="titulo" class="titulo-flash-card"  type="text" placeholder="Frente do FlashCard ">
+            </div>
+            <div class="formulario-parte2">
+                <label for="texto">Digite a parte de tras do FlashCard</label>
+                <textarea id="texto" class="texto-flash-card"  type="text" placeholder="Resposta do FlashCard"></textarea>
+            </div>
+            
+        </form>
+        <button type="submit" id="criar" class="botao-criar">Criar</button>
+        <section id="containerFC"   class="FlashCards">
+            <button class="FlashCard FlashCardbase">FlashCard1</button>
+            
+            
+        </section>
+    </section>
+    
+    <script defer src="pagina.js"></script>
+</body>
+</html>
