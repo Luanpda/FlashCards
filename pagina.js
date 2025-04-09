@@ -1,3 +1,7 @@
+import verificarListaVazia  from "./listaVazia.js"
+
+
+
 const frenteFC = document.getElementById("titulo")
 const trasFC = document.getElementById("texto")
 const Criar = document.getElementById("criar")
@@ -15,7 +19,8 @@ Criar.addEventListener("click",(evento) =>{
     FlashCard.classList.add("FlashCard");
     FlashCard.innerText = frentedoflash;
     containerFC.appendChild(FlashCard);
-
+    verificarListaVazia(containerFC)
+    
     FlashCard.addEventListener("click",(evento) =>{
         evento.preventDefault();
         if (FlashCard.innerText === frentedoflash){
@@ -29,3 +34,5 @@ Criar.addEventListener("click",(evento) =>{
     })
 
 })
+
+verificarListaVazia(containerFC);
