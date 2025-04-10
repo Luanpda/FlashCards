@@ -18,21 +18,37 @@ Criar.addEventListener("click",(evento) =>{
     const FlashCard = document.createElement("button");
     FlashCard.classList.add("FlashCard");
     FlashCard.innerText = frentedoflash;
+
+    FlashCard.dataset.frente = frentedoflash;
+    FlashCard.dataset.tras = trasdoflash;
+    FlashCard.dataset.id = Date.now();
+
+
+
+
     containerFC.appendChild(FlashCard);
     verificarListaVazia(containerFC)
     
     FlashCard.addEventListener("click",(evento) =>{
         evento.preventDefault();
-        if (FlashCard.innerText === frentedoflash){
-            FlashCard.innerText = trasdoflash;
-            containerFC.appendChild(FlashCard);
+        const card = evento.target; // Obtém o elemento flashcard clicado
+        const frenteTexto = card.dataset.frente;
+        const trasTexto = card.dataset.tras;
+
+
+
+
+        if (card.innerText === frenteTexto){
+            card.innerText = trasTexto;
+            
         } else{
-            FlashCard.innerText = frentedoflash;
-            containerFC.appendChild(FlashCard);
+            card.innerText = frenteTexto
+            
         }
         
     })
-
+    frenteFC.value = "";
+    trasFC.value = "";
 })
 
 verificarListaVazia(containerFC);
