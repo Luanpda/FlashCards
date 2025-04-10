@@ -8,6 +8,7 @@
     --azul: #123458;
     --branco: #ffffff;
     --roxo: #5D0E41;
+    --roza: #A5158C;
 }
 
 body {
@@ -47,9 +48,7 @@ h1{
 .formulario-parte1{
     margin-bottom: 3.5em;
 }
-.formulario-parte2{
-    margin-bottom: 1em;
-}
+
 
 
 .titulo-flash-card{
@@ -64,10 +63,15 @@ h1{
     
     
 }
+
+
 input[type="text"]:focus{
     outline: none;
     box-shadow: 0 0 8px #7E30E1;
 }
+
+
+
 .texto-flash-card{
     margin-top: 0.5em;
     width: 70%;
@@ -95,8 +99,22 @@ textarea:focus{
     color: inherit;
     font-size: 16px;
     padding: 0.5em;
-    margin-bottom: 1.5em;
+    margin: 2em;
+    border: 2px solid transparent;
     border-radius: 15px;
+    transition: 0.2s ease-in-out;
+    
+    
+}
+
+.botao-criar:hover{
+    border: 2px solid var(--branco);
+    transform: scale(1.05);
+    
+    
+    
+      
+      
 }
 
 
@@ -112,7 +130,7 @@ textarea:focus{
     
     border-radius: 10px;
     padding: 0.5em;
-    background-color: #A5158C;
+    background-color: var(--roza);
     margin-bottom: 1.5em;
 }
 .FlashCardbase{
